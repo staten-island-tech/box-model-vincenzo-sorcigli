@@ -1,0 +1,18 @@
+.header{
+    height: 20vh;
+    background-color: blue;
+    padding: 10px;
+    border: 3px solid black;
+    margin: 10px;
+    position: relative;
+}
+
+.header-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    width: 200vh;
+    margin: 20px; /* add margin direction only right and left. how do i do that? */
+}
