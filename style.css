@@ -1,18 +1,37 @@
+#background{
+    @keyframes red-to-blue {
+        from {background-color: red;}
+        to {background-color: blue;}
+    }
+    width: 300px;
+    height: 200px;
+    background: red;
+    animation: red-to-blue 100ms infinite; /*not done*/
+}
+
 .header{
     height: 20vh;
-    background-color: blue;
     padding: 10px;
     border: 3px solid black;
     margin: 10px;
     position: relative;
+    background-image: linear-gradient(
+        to top,
+    rgba(213, 104, 247, 0.5),
+    rgba(251, 202, 38, 0.5)
+    ), 
+    url(media/placeholder.png);
+    background-size: auto;
 }
 
 .header-text{
+    width: 200vh;
+    font-family: 'Asset', cursive;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
-    width: 200vh;
-    margin: 20px; /* add margin direction only right and left. how do i do that? */
+    text-transform: uppercase;
+    letter-spacing: -12px;
 }
