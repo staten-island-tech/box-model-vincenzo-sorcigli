@@ -1,12 +1,15 @@
+@keyframes color-change {
+    from {background-color: red;}
+    50% {background-color: green;}
+    to {background-color: blue;}
+}
+
 #background{
-    @keyframes red-to-blue {
-        from {background-color: red;}
-        to {background-color: blue;}
-    }
-    width: 300px;
-    height: 200px;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
     background: red;
-    animation: red-to-blue 100ms infinite; /*not done*/
+    animation: color-change 500ms infinite;
 }
 
 .header{
