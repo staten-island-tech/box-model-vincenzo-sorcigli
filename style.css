@@ -1,7 +1,12 @@
+html{
+    font-size: 62.5%;
+}
+
 @keyframes color-change {
     from {background-color: red;}
     50% {background-color: green;}
-    to {background-color: blue;}
+    90% {background-color: blue;}
+    to {background-color: red;}
 }
 
 #background{
@@ -9,7 +14,8 @@
     width: 100vw;
     height: 100vh;
     background: red;
-    animation: color-change 500ms infinite;
+    animation: color-change 2000ms infinite;
+    z-index: -1;
 }
 
 .header{
@@ -34,7 +40,25 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    text-align: center;
+    left: 50%;
     text-transform: uppercase;
+    text-align: center;
     letter-spacing: -12px;
+    color: wheat;
+    font-size: 4rem
 }
+
+.explanation-text{
+    left: 50%;
+    font-family: 'Monsieur La Doulaise', cursive;
+    font-size: 10rem;
+    color: slateblue;
+    text-align: center;    
+}
+
+.crying-man{
+    left: -50%;
+    height: 25rem;
+    width: 192rem;
+}
+
